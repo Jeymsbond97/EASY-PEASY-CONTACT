@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 0.5rem;
+    background: url(2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+.container h1{
+    color: white;
+}
+.container-area form input{
+    border: none;
+    overflow: hidden;
+    border-bottom: 1px solid #909090;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    padding:  0.5rem;
+    margin-top: 25px;
+}
+form input{
+    background-color: #909090;
+    columns: black;
+    border-radius: 10px;
+}
+form input::placeholder{
+    color: black;
+    font-family:italic ;
+}
+.btns{
+    margin: 30px 10px;
+}
+.btns #btnSubmit{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    margin: 15px;
+}
+.btns #btnReset{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(124, 24, 24);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    margin: 15px;
+}
+.container-text{
+    width: 600px;
+    border: 1px solid #909090;
+    border-top: none;
+    height: 200px;
+    margin-top: 20px;
+}
+.container-text p{
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+
+}
+#message{
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    font-size: 22px;
+    font-weight: bolder;
+}
+@keyframes anim{
+    100%{
+        transform: translateX(200px);
+    }
+}

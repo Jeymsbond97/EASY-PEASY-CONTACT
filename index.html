@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+    <div class="container">
+        <h1><code>EASY-PEASY CONTACT FORM 😍 </code></h1><br>
+        <div class="container-area">
+            <form action="#">
+                <input type="text"  onkeyup="addname()" name="fName" id="fName" placeholder="Typing name..." required  autocomplete="off">
+                <input type="number" onkeyup="addage()"  name="age" id="age" placeholder="Typing age..." required  autocomplete="off">
+                <input type="text" onkeyup="addMarried()"  name="IsMarried" id="IsMarried" required  placeholder="Are you Married 🤷‍♀️ (yes/no)" autocomplete="off">
+                <div class="btns">
+                    <button type="button" onclick="btnsubmit()" id="btnSubmit">SUBMIT</button>
+                    <button type="reset" id="btnReset" onclick="myfunction()">RESET</button>
+                </div>
+            </form>
+        </div>
+        <div class="container-text">
+            <p id="Name"></p>
+            <p id="textage"></p>
+            <p id="Married"></p>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
